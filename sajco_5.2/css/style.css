@@ -1,0 +1,836 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header-main {
+    background-color: #002e5b;
+    color: white;
+   
+}
+
+.header-main .header-content {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 5px; */
+    align-items: center;
+}
+
+.header-main .header-content .top-nav {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    align-items: center;
+}
+
+.header-main .header-content ul{
+    margin: 0 !important;
+}
+
+.header-main .header-content .top-nav li {
+    padding: 0px 5px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 13px;
+}
+
+.header-main .header-content .top-nav svg {
+    color: #fde428;
+}
+
+.header-main .header-content  .btn-group button {
+    background-color: #fde428;
+    color: #002e5b;
+    border-radius: 0;
+  
+}
+.header-main .header-content  .btn-group ul{
+    background-color: #002e5b;
+    border-radius: 0;
+}
+.header-main .header-content  .btn-group ul:hover li a{
+    background-color: #3282e1;
+}
+.header-main .header-content  .btn-group ul li a{
+    color: white;
+}
+
+/* -----------------Navbar styling------------- */
+.navbar {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+   /* position: absolute !important; */
+   z-index: 1 !important;
+   margin: auto;
+}
+.navbar .nav-link {
+    font-size: 16px;
+    color: #002e5b;
+    font-weight: 600;
+ text-transform: capitalize;
+ padding: 10px 16px;
+}
+.navbar .nav-link:active{
+    color: #6c98e1 !important;
+}
+.navbar .nav-link:hover{
+    color: #6c98e1;
+}
+.navbar .navbar-collapse {
+    flex-grow: 0 !important;
+}
+
+.navbar .nav-social-icon svg {
+    color: #002e5b;
+    margin: 0px 5px !important;
+}
+.dropdown-menu {
+    background: #fff;
+    list-style: none;
+    padding: 14px 0;
+    margin: 0;
+    width: 230px;
+    z-index: 1;
+    box-shadow: 0 5px 11px 0 rgb(0 0 0 / 27%);
+    transition: all 0.3s ease;
+}
+.dropdown-menu .dropdown-item{
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #333333;
+}
+/* ---------------------Banner-------------- */
+.banner {
+    background-color: #fde428;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner .container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.banner .container .buttons .btn {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #002e5b;
+    color: white;
+    border-radius: 0;
+    padding: 8px 21px;
+    font-weight: 700;
+    font-size: 14px;
+}
+.banner .container .buttons .btn svg{
+    color: #fde428;
+}
+
+.banner .container .buttons .btn:hover {
+    background-color: #fde428;
+    color: #002e5b;
+    border: 2px solid white;
+}
+
+.banner .container .content h4 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+/* ------------------Componentss------------ */
+
+.container1 {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+   display: grid;
+   grid-template-columns: repeat(3 , 1fr);
+   grid-gap:10px;
+   margin-top: 50px ;
+  }  
+  .div2{
+    position: relative;
+    width: 100%;
+  }
+  .div2 .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+.overlay1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 46, 91, 0.9);
+    overflow: hidden;
+    width: 100%;
+    height: 30%;
+    transition: .5s ease;
+  }
+ .div2:hover .overlay1 {
+    height: 100%;
+  }
+.text  .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .text .title h6{
+    color: #fff;
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 0;
+    margin: 0;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+  .text .title svg{
+    color: #fde428;
+ margin-right: 5px;
+  }
+  .text .content{
+    display: none;
+  }
+  .div2:hover .text .content{
+    display: flex;
+    flex-direction: column;
+  }
+  .text .content p{
+    margin: 0 0 20px;
+    color: #fff;
+    font-size: 13px;
+    line-height: 24px;
+  }
+  .text .content a{
+    text-transform: lowercase;
+    font-weight: 700;
+    font-size: 13px;
+    transition: color 0.2s linear;
+    color: #fde428;
+    text-decoration: none
+   
+;
+  }
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+/* -----------Our services------------ */
+.services {
+    width: 100%;
+    background-color: #f2f2f2 !important;
+    padding: 30px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 700 !important;
+    color: #002e5b;
+    padding: 20px;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 6px;
+    background: #fde428;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    margin: 9px 0 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services .services-component {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+.services .services-component .div1 {
+    display: flex;
+
+}
+
+.services .services-component .div1:hover {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.services .services-component .div1 .content {
+    padding: 10px;
+}
+
+.services .services-component .div1 .icon {
+    padding: 10px;
+}
+
+.services .services-component .div1:hover .icon::before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 15px;
+    background: #fde428;
+    margin: 9px 0 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services .services-component .div1:hover .icon::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 15px;
+    background: #fde428;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services .services-component .div1 .content h5 {
+    font-weight: 700;
+    color: #002e5b !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.services .services-component .div1 .content p {
+    color: #777777;
+    font-size: 14px !important;
+    line-height: 18px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%;
+}
+/* -----------------universities---------------- */
+.university-section{
+    font-family: 'Montserrat', sans-serif;
+    margin: 50px 0px;
+}
+.university-section .uni{
+    width: 100%;
+display: grid;
+grid-template-columns: repeat(4,1fr);
+
+}
+.university-section .uni img{
+    width: 100%;
+}
+.uni1 h4 {
+    color: #002e5b;
+    margin-bottom: 6px;
+    line-height: 22px;
+    padding-top: 0;
+    font-size: 20px;
+    font-weight: 800;
+}
+.uni1 h4 a {
+    color: #002e5b;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+.uni1 .position{
+    font-weight: 600;
+    color: #777777;
+    line-height: 18px;
+}
+.uni1 .company-{
+    font-weight: 600;
+    color: #777777;
+    line-height: 18px;
+    margin: 0 0 24px;
+}
+.uni p{
+    font-family: Open Sans;
+    color: #222222;
+    line-height: 22px;
+    margin: 0;
+    font-size: 1rem;
+}
+/* ------------------------------------- */
+.our-partners {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+.main {
+    position: relative;
+    width: 90%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.item-div {
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.item {
+    min-width: 200px;
+    max-width: 200px;
+    margin-left: 15px;
+    height: 120px;
+    border-radius: 20px;
+}
+.item:first-child {
+    margin-left: 0;
+}
+.itme-div::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+.left,
+.right {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50px;
+
+}
+
+.left {
+    top: 35%;
+    left: -2px;
+
+}
+
+.right {
+    right: -25px;
+    bottom: 50%;
+    transform: rotate(180deg);
+}
+
+.bg-color {
+    background-color: #002e5b;
+}
+
+.content- {
+    font-size: 26px;
+    color: #ffffff;
+    line-height: 40px;
+    text-align: center;
+    font-family: Poppins;
+    font-weight: 700;
+    font-style: normal;
+    padding: 30px;
+}
+
+.content- mark {
+    color: #fde428;
+    background-color: #002e5b;
+}
+.expo{
+    margin: 50px 0px;
+}
+.expo h5 {
+    font-weight: 600;
+    color: #002e5b !important;
+    margin-top: 10px;
+}
+
+.expo h5::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #fde428;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    margin: 9px 0 0;
+
+}
+
+/* ---------------footer -------------- */
+.footer-section {
+    background-color: #002e5b;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.footer-section .section {
+    padding: 30px;
+}
+
+.footer-section .text-color {
+    color: white !important;
+    font-size: 12px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .text-center a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer .social-icons  a svg{
+  color: white;
+  margin-right: 5px;
+}
+.footer .social-icons .twitter{
+    background-color: white;
+    border-radius: 2px;
+   
+}
+.footer .social-icons .twitter:hover{
+    background-color: #00acee;
+}
+.footer .social-icons .twitter:hover svg{
+    color: white;
+}
+.footer .social-icons .twitter svg{
+    color: #002e5b;
+}
+.footer .social-icons .linkedin:hover svg{
+    color: #0072b1;
+
+}
+.footer .social-icons .fab:hover svg{
+    color: #3b5998;
+}
+
+.row h5 {
+    position: relative;
+    color: #fff;
+    margin: 0 0 36px;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 20px 0px;
+}
+
+.row svg {
+    color: #fde428;
+    margin-right: 5px;
+}
+
+.row .mid a {
+    text-decoration: none;
+    color: white;
+    font-family: Montserrat;
+}
+
+.row .right-sec .d-flex ul li {
+    list-style: none;
+    line-height: 16px;
+    padding: 0 20px;
+    margin: 0 0 20px;
+    font-weight: 400;
+}
+
+.row .right-sec .d-flex ul li a {
+    color: #34dfe5 !important;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.row .navbar-brand img {
+    width: 200px;
+    height: 100px;
+    padding: 20px 0px;
+}
+
+.row .col-text {
+    font-family: Open Sans;
+    color: #fff;
+    opacity: .5;
+    margin: 0;
+   
+}
+
+/* ---------------------Apply now page ----------- */
+/* form Section heading */
+.form-section .heading h3 {
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif !important;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.5em;
+}
+.form-section .row .main-form .form-control{
+    background-color:#dbdbdb ;
+    border-radius: 0;
+}
+.form-section .row .main-form .form-label{
+    font-size: 14px;
+}
+.form-section .row .main-form .form-control:focus{
+    box-shadow: none;
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: rgb(202, 225, 233);
+}
+.form-section .row textarea{
+    background-color:#dbdbdb ;
+    border-radius: 0;
+    box-shadow: none;
+}
+.form-section .row textarea:focus{
+    border: 2px solid;
+    border-radius: 3px;
+}
+.form-section .row .main-form .email-1{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.form-section .row .main-form .email-2{
+    margin-top: 97px;
+    margin-bottom: 40px;
+}
+#inputGroupSelect03{
+    background-color:#dbdbdb ;
+    box-shadow: none;
+    border-radius: 0;
+    font-size: 14px;
+
+}
+#inputGroupSelect03:focus{
+    box-shadow: none;
+    border: 2px solid;
+    border-radius: 3px;
+}
+.form-section .form-btn button{
+    height: 35px;
+    background-color: #333333;
+    border: 0px solid #CCC;
+    padding: 0px 10px;
+    color: #FFFFFF;
+    width: 150px;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    font-size: 14px;
+}
+.form-section .form-btn button:hover{
+    background-color: #fde428;
+    color: #fff;
+    transition: 0.5s;
+}
+/* ------------------appy now page end------------ */
+/* ------------------Companyyy  page----------------- */
+.entry-content{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #777777;
+    margin-top: 30px;
+    padding: 20px;
+}
+.entry-content h2{ 
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+     text-align: start;
+     color: #222222;
+     font-size: 36px;}
+     .entry-content p{
+        line-height: 26px;
+        margin: 0 0 15px;
+     }
+.entry-content h2::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 6px;
+    background: #fde428;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    margin: 9px 0 0;
+    
+}
+.entry-content h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: -0.04em;
+        color: #222222;
+}
+.entry-content h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700 !important;
+        color: #222222;
+}
+.entry-content h3::after{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 4px;
+    background: #fde428;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    margin: 9px 0 0;
+}
+.entry-content h5{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600 !important;
+        color: #222222;
+}
+.entry-content h4::after{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 4px;
+    background: #fde428;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    margin: 9px 0 0;
+}
+.entry-content h5::after{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 4px;
+    background: #fde428;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    margin: 9px 0 0;
+}
+
+
+/* -------------------------contact page --------------- */
+.contact-us{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+}
+/* contact us */
+.contact-us .row a {
+    text-decoration: none;
+    color: #3282e1;
+}
+.form-section h4{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 23px;
+    letter-spacing: -0.04em;
+    line-height: 28px;
+}
+.form-section  h4::after{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 4px;
+    background: #fde428;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    margin: 9px 0 0;
+}
+.form-section .row input{
+    margin: 20px 0px;
+}
+.contact-us .contact-details .main-content .contact-text p{
+font-size: 14px;
+}
+.contact-us .row .contact-details {
+    background-color: #19426b;
+    color: #fff;
+    padding: 35px;
+}
+
+.contact-us .row .main-content .icon .fa {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 12px 0 0;
+    font-size: 20px;
+    color: #fde428;
+}
+.section-title h4 {
+  
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: -0.04em;
+        color: #222222;
+}
+.contact-us .row .contact-details .social-links .fa {
+    padding: 10px 11px;
+    color: #19416a;
+    background-color: white;
+    border-radius: 25px;
+    margin-right: 12px;
+    font-size: 17px;
+}
+
+.contact-us .row .contact-details .social-links .fa-facebook:hover,
+.contact-us .row .contact-details .social-links .fa-linkedin:hover {
+    color: #fff;
+    background: #3a5897;
+}
+
+.contact-us .row .contact-details .social-links .fa-twitter:hover,
+.contact-us .row .contact-details .social-links .fa-skype:hover {
+    color: #fff;
+    background: #6c98e1;
+}
+
+/* form */
+.form-section .row .form-control {
+    background-color: #dbdbdb;
+    border-radius: 0;
+    padding: 11px;
+}
+
+.form-section .row .form-control:focus {
+    box-shadow: none;
+    border: 2px solid #fde428;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.form-section .form-btn button {
+    height: 55px;
+    background-color: #002e5b;
+    padding: 4px 31px;
+    color: #FFFFFF;
+    font-size: 14px;
+    border: 0;
+}
+
+.form-section .form-btn button:hover {
+    background-color: #dcae27;
+    color: #fff;
+    transition: 0.5s;
+}
